@@ -5,5 +5,6 @@ export default function addListing(newListing) {
         localStorage.setItem("listings", JSON.stringify(currListings));
     } catch (error) {
         alert(`Error adding new listing for ${newListing.firstName} ${newListing.lastName}`);
+        console.error(error);
     }
 }
