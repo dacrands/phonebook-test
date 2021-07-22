@@ -19,7 +19,7 @@ export default function ListingForm(props) {
     
     useEffect(() => {
         if (location.state) {
-            const listingToUpdate = location.state.listingToUpdate;
+            const listingToUpdate = location.state.listingToUpdate;            
             setIsUpdating(true);
             setListing(listingToUpdate);
         }
@@ -27,10 +27,7 @@ export default function ListingForm(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        if (isUpdating) {
-            setListing(prevState => ({
-                ...prevState,               
-            }))    
+        if (isUpdating) {            
             updateListing(listing);
             alert("Listing updated. Returning to home page.");
             history.push("/");
@@ -39,7 +36,7 @@ export default function ListingForm(props) {
         setListing(prevState => ({
             ...prevState,
             id: Date.now()
-        }))
+        }))        
         addListing(listing);
         alert("Listing added. Returning to home page.");
         history.push("/");
