@@ -1,5 +1,3 @@
-import { uniqueId } from 'lodash'
-
 export default function initListings() {
   if (!localStorage.listings) {
     localStorage.setItem("listings", JSON.stringify([
