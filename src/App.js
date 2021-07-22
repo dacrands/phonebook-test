@@ -1,18 +1,28 @@
 import './App.css';
-import { useEffect } from 'react';
-import initListings from './data/initListings';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
+import Home from "./components/Home"
+import ListingForm from './components/ListingForm';
 
-function App() {  
-  useEffect(() => {
-    initListings();    
-  }, [])
+function App() {
   return (
-    <div>
-      <header>
-        <h1>Phonebook App</h1>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Switch>
+          <Route path="/listing">
+            <ListingForm />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
