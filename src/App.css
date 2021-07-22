@@ -23,11 +23,13 @@
 .btn {
   border: none;
   background: none;
-  color: blue;
+  color: rgb(46, 102, 206);
   cursor: pointer;
   text-decoration: underline;
   text-transform: uppercase;
   padding: 0;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .form {
