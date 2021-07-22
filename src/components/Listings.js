@@ -30,7 +30,7 @@ export default function Listings() {
                     }
                 </tbody>
             </table>
-            <div style={{ marginTop: "1rem", textAlign: "right" }}>
+            <div className="navlink">
                 <Link className="btn" to="/listing">Add New</Link>
             </div>
         </>
