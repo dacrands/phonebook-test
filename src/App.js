@@ -1,8 +1,12 @@
 import './App.css';
+import { useEffect } from 'react';
 import initListings from './data/initListings';
 
 
 function App() {  
+  useEffect(() => {
+    initListings();    
+  }, [])
   return (
     <div>
       <header>
