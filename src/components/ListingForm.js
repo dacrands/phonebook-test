@@ -58,22 +58,22 @@ export default function ListingForm(props) {
         }
         </h2>        
         <form onSubmit={handleSubmit} className="form">
-            <label for="firstName">
+            <label htmlFor="firstName">
                 First Name
             </label>
             <input required type="text" name="firstName" value={listing.firstName} onChange={onChange}/>
             
-            <label for="lastName">
+            <label htmlFor="lastName">
                 Last Name
             </label>
             <input required type="text" name="lastName" value={listing.lastName} onChange={onChange}/>
             
-            <label for="phone">
+            <label htmlFor="phone">
                 Phone
             </label>            
             <input required type="text" name="phone" value={listing.phone} onChange={onChange}/>
             
-            <label for="email">
+            <label htmlFor="email">
                 Email
             </label>
             <input required type="email" name="email" value={listing.email} onChange={onChange}/>  
