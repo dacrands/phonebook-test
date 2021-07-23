@@ -1,13 +1,9 @@
-import './App.css';
+import "./App.css";
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from "./components/Home"
-import ListingForm from './components/ListingForm';
+import Home from "./components/Home";
+import ListingForm from "./components/ListingForm";
 
 function App() {
   return (
