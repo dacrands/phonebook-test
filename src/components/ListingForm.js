@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useHistory, useLocation } from "react-router-dom";
+import { AiOutlineHome } from "react-icons/ai"
 import addListing from "../data/addListing";
 import updateListing from "../data/updateListing";
 
@@ -100,8 +101,13 @@ export default function ListingForm(props) {
         <button type="submit">Submit</button>
       </form>
       <div className="navlink">
-        <Link className="btn" to="/">
-          Home
+        <Link 
+          className="btn" 
+          to="/" 
+          ariaLabel="Home"
+          title="Home"
+        >
+          <AiOutlineHome />
         </Link>
       </div>
     </>
