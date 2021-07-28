@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { BsPlusCircle } from "react-icons/bs"
+import { BsPlusCircle } from "react-icons/bs";
 import initListings from "../data/initListings";
 import Listings from "./Listings";
 
@@ -15,8 +15,8 @@ export default function Home() {
       </header>
       <Listings />
       <div className="navlink">
-        <Link 
-          className="btn" 
+        <Link
+          className="btn"
           to="/listing"
           ariaLabel="Add new entry"
           title="Add new entry"

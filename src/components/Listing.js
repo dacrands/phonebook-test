@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaTrashAlt, FaEdit } from 'react-icons/fa';
+import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import deleteListingById from "../data/deleteListingById";
 import getListings from "../data/getListings";
 
@@ -19,28 +19,28 @@ export default function Listing(props) {
 
   return (
     <tr>
-      <td>        
-        <button 
+      <td>
+        <button
           ariaLabel="Delete"
           title="Delete"
-          className="btn" 
-          style={{color: "#d85858", marginRight: "1.5rem"}}
+          className="btn"
+          style={{ color: "#d85858", marginRight: "1.5rem" }}
           onClick={() => deleteListing(props.listing)}
         >
           <FaTrashAlt />
-        </button>        
+        </button>
         <Link
           ariaLabel="Edit"
           title="Edit"
           className="btn"
-          style={{color: "#f19017", marginRight: "1.5rem"}}
+          style={{ color: "#f19017", marginRight: "1.5rem" }}
           to={{
             pathname: "/listing",
             state: { listingToUpdate: props.listing },
           }}
         >
           <FaEdit />
-        </Link>        
+        </Link>
       </td>
       <td>{props.listing.firstName}</td>
       <td>{props.listing.lastName}</td>

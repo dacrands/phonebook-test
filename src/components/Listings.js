@@ -32,7 +32,7 @@ export default function Listings() {
               />
             ))}
         </tbody>
-      </table>      
+      </table>
     </>
   );
 }
