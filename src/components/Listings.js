@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import getListings from "../data/getListings";
 import Listing from "./Listing";
 
@@ -33,12 +32,7 @@ export default function Listings() {
               />
             ))}
         </tbody>
-      </table>
-      <div className="navlink">
-        <Link className="btn" to="/listing">
-          Add New
-        </Link>
-      </div>
+      </table>      
     </>
   );
 }
